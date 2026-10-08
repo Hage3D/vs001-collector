@@ -16,72 +16,8 @@
   "raw_bodies": "never exported"
  },
  "max_gap_between_covered_scans_s": null,
- "n_pending_jobs": 30,
+ "n_pending_jobs": 22,
  "pending_jobs": [
-  {
-   "due_jst": "2026-10-09 03:27:13 JST",
-   "due_utc": "2026-10-08T18:27:13+00:00",
-   "job_id": 233,
-   "kind": "exit",
-   "ref_id": 69,
-   "status": "running"
-  },
-  {
-   "due_jst": "2026-10-09 03:27:19 JST",
-   "due_utc": "2026-10-08T18:27:19+00:00",
-   "job_id": 234,
-   "kind": "exit",
-   "ref_id": 70,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:27:25 JST",
-   "due_utc": "2026-10-08T18:27:25+00:00",
-   "job_id": 235,
-   "kind": "exit",
-   "ref_id": 71,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:27:31 JST",
-   "due_utc": "2026-10-08T18:27:31+00:00",
-   "job_id": 236,
-   "kind": "exit",
-   "ref_id": 72,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:29:15 JST",
-   "due_utc": "2026-10-08T18:29:15+00:00",
-   "job_id": 230,
-   "kind": "side_eval",
-   "ref_id": 18,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:32:13 JST",
-   "due_utc": "2026-10-08T18:32:13+00:00",
-   "job_id": 249,
-   "kind": "side_eval",
-   "ref_id": 19,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:32:13 JST",
-   "due_utc": "2026-10-08T18:32:13+00:00",
-   "job_id": 252,
-   "kind": "side_eval",
-   "ref_id": 20,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:32:13 JST",
-   "due_utc": "2026-10-08T18:32:13+00:00",
-   "job_id": 253,
-   "kind": "exit",
-   "ref_id": 73,
-   "status": "pending"
-  },
   {
    "due_jst": "2026-10-09 03:32:19 JST",
    "due_utc": "2026-10-08T18:32:19+00:00",
@@ -264,9 +200,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791484037.2641788,
- "updated_jst": "2026-10-09 03:27:17 JST",
- "updated_utc": "2026-10-08T18:27:17+00:00",
+ "updated_epoch": 1791484338.5296853,
+ "updated_jst": "2026-10-09 03:32:18 JST",
+ "updated_utc": "2026-10-08T18:32:18+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

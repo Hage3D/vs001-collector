@@ -16,64 +16,8 @@
   "raw_bodies": "never exported"
  },
  "max_gap_between_covered_scans_s": null,
- "n_pending_jobs": 22,
+ "n_pending_jobs": 15,
  "pending_jobs": [
-  {
-   "due_jst": "2026-10-09 03:32:19 JST",
-   "due_utc": "2026-10-08T18:32:19+00:00",
-   "job_id": 254,
-   "kind": "exit",
-   "ref_id": 74,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:32:25 JST",
-   "due_utc": "2026-10-08T18:32:25+00:00",
-   "job_id": 255,
-   "kind": "exit",
-   "ref_id": 75,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:32:31 JST",
-   "due_utc": "2026-10-08T18:32:31+00:00",
-   "job_id": 256,
-   "kind": "exit",
-   "ref_id": 76,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:32:37 JST",
-   "due_utc": "2026-10-08T18:32:37+00:00",
-   "job_id": 257,
-   "kind": "exit",
-   "ref_id": 77,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:32:43 JST",
-   "due_utc": "2026-10-08T18:32:43+00:00",
-   "job_id": 258,
-   "kind": "exit",
-   "ref_id": 78,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:32:49 JST",
-   "due_utc": "2026-10-08T18:32:49+00:00",
-   "job_id": 259,
-   "kind": "exit",
-   "ref_id": 79,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 03:32:55 JST",
-   "due_utc": "2026-10-08T18:32:55+00:00",
-   "job_id": 260,
-   "kind": "exit",
-   "ref_id": 80,
-   "status": "pending"
-  },
   {
    "due_jst": "2026-10-09 03:57:13 JST",
    "due_utc": "2026-10-08T18:57:13+00:00",
@@ -200,12 +144,12 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791484338.5296853,
- "updated_jst": "2026-10-09 03:32:18 JST",
- "updated_utc": "2026-10-08T18:32:18+00:00",
+ "updated_epoch": 1791484444.6228929,
+ "updated_jst": "2026-10-09 03:34:04 JST",
+ "updated_utc": "2026-10-08T18:34:04+00:00",
  "writer": {
-  "active": true,
-  "end_reason": null,
+  "active": false,
+  "end_reason": "deadline",
   "gha_run_id": "37780178719",
   "runner_name": "GitHub Actions 1000000000"
  }

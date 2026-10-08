@@ -2,7 +2,7 @@
  "code_sha256": "98b88c6cdd44479b",
  "config_hash": "736577b44e7c605a",
  "cycles_covered_attempts": 0,
- "cycles_slots_seen": 111,
+ "cycles_slots_seen": 112,
  "drain_end_utc": "2026-10-09T15:53:58+00:00",
  "export_policy": {
   "dropped_columns": {
@@ -25,30 +25,6 @@
   }
  },
  "pending_jobs": [
-  {
-   "due_jst": "2026-10-09 07:09:35 JST",
-   "due_utc": "2026-10-08T22:09:35+00:00",
-   "job_id": 424,
-   "kind": "entry",
-   "ref_id": 131,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 07:09:35 JST",
-   "due_utc": "2026-10-08T22:09:35+00:00",
-   "job_id": 425,
-   "kind": "entry",
-   "ref_id": 132,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 07:09:35 JST",
-   "due_utc": "2026-10-08T22:09:35+00:00",
-   "job_id": 429,
-   "kind": "entry",
-   "ref_id": 133,
-   "status": "pending"
-  },
   {
    "due_jst": "2026-10-09 07:09:35 JST",
    "due_utc": "2026-10-08T22:09:35+00:00",
@@ -76,9 +52,9 @@
   {
    "due_jst": "2026-10-09 07:09:35 JST",
    "due_utc": "2026-10-08T22:09:35+00:00",
-   "job_id": 420,
+   "job_id": 429,
    "kind": "entry",
-   "ref_id": 130,
+   "ref_id": 133,
    "status": "running"
   },
   {
@@ -304,6 +280,30 @@
    "kind": "exit",
    "ref_id": 129,
    "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 09:09:41 JST",
+   "due_utc": "2026-10-09T00:09:41+00:00",
+   "job_id": 436,
+   "kind": "exit",
+   "ref_id": 130,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 09:09:47 JST",
+   "due_utc": "2026-10-09T00:09:47+00:00",
+   "job_id": 437,
+   "kind": "exit",
+   "ref_id": 131,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 09:09:53 JST",
+   "due_utc": "2026-10-09T00:09:53+00:00",
+   "job_id": 438,
+   "kind": "exit",
+   "ref_id": 132,
+   "status": "pending"
   }
  ],
  "schema": 1,
@@ -311,9 +311,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791497382.9309635,
- "updated_jst": "2026-10-09 07:09:42 JST",
- "updated_utc": "2026-10-08T22:09:42+00:00",
+ "updated_epoch": 1791497399.2236311,
+ "updated_jst": "2026-10-09 07:09:59 JST",
+ "updated_utc": "2026-10-08T22:09:59+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

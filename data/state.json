@@ -2,7 +2,7 @@
  "code_sha256": "98b88c6cdd44479b",
  "config_hash": "736577b44e7c605a",
  "cycles_covered_attempts": 0,
- "cycles_slots_seen": 80,
+ "cycles_slots_seen": 81,
  "drain_end_utc": "2026-10-09T15:53:58+00:00",
  "export_policy": {
   "dropped_columns": {
@@ -25,14 +25,6 @@
   }
  },
  "pending_jobs": [
-  {
-   "due_jst": "2026-10-09 04:29:39 JST",
-   "due_utc": "2026-10-08T19:29:39+00:00",
-   "job_id": 346,
-   "kind": "entry",
-   "ref_id": 108,
-   "status": "running"
-  },
   {
    "due_jst": "2026-10-09 05:22:13 JST",
    "due_utc": "2026-10-08T20:22:13+00:00",
@@ -224,6 +216,14 @@
    "kind": "exit",
    "ref_id": 107,
    "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 06:29:57 JST",
+   "due_utc": "2026-10-08T21:29:57+00:00",
+   "job_id": 351,
+   "kind": "exit",
+   "ref_id": 108,
+   "status": "pending"
   }
  ],
  "schema": 1,
@@ -231,9 +231,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791487795.4998972,
- "updated_jst": "2026-10-09 04:29:55 JST",
- "updated_utc": "2026-10-08T19:29:55+00:00",
+ "updated_epoch": 1791488081.8293147,
+ "updated_jst": "2026-10-09 04:34:41 JST",
+ "updated_utc": "2026-10-08T19:34:41+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

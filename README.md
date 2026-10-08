@@ -28,7 +28,7 @@ Quotes are estimates from public quote endpoints, never fills. Nothing here is i
 
 `.github/workflows/collect.yml`:
 
-* Triggers: cron every 30 min (`7,37 * * * *`) + `workflow_dispatch`.
+* Triggers: cron every 30 min (`7,37 * * * *`), push to `main` (code updates), `workflow_dispatch`.
 * `concurrency: {group: vs001, cancel-in-progress: false}`: at most one run active and one queued. A run
   loops up to 340 min (job `timeout-minutes: 355`, under the 6 h cap) and soft-stops a few minutes early
   right after a completed scan when no entry/exit is due soon; the queued run then takes over (≈1–3 min).

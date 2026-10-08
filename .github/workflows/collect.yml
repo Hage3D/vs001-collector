@@ -8,6 +8,9 @@ on:
     # keeps ONE pending run queued, which starts as soon as the active run ends -> near-continuous coverage.
     # Scheduled triggers can be delayed or dropped by GitHub; gaps are recorded as explicit 'missed' cycles.
     - cron: "7,37 * * * *"
+  push:
+    # A code update on main starts (or queues) a run; data-branch commits never trigger workflows.
+    branches: [main]
   workflow_dispatch:
     inputs:
       max_minutes:

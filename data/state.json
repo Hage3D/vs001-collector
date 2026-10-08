@@ -2,7 +2,7 @@
  "code_sha256": "000c40889e33a355",
  "config_hash": "736577b44e7c605a",
  "cycles_covered_attempts": 0,
- "cycles_slots_seen": 12,
+ "cycles_slots_seen": 13,
  "drain_end_utc": "2026-10-09T15:53:58+00:00",
  "export_policy": {
   "dropped_columns": {
@@ -16,14 +16,38 @@
   "raw_bodies": "never exported"
  },
  "max_gap_between_covered_scans_s": null,
- "n_pending_jobs": 31,
+ "n_pending_jobs": 35,
  "pending_jobs": [
   {
-   "due_jst": "2026-10-08 22:47:13 JST",
-   "due_utc": "2026-10-08T13:47:13+00:00",
-   "job_id": 79,
-   "kind": "gate",
-   "ref_id": 7,
+   "due_jst": "2026-10-08 22:52:13 JST",
+   "due_utc": "2026-10-08T13:52:13+00:00",
+   "job_id": 81,
+   "kind": "entry",
+   "ref_id": 26,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-08 22:52:13 JST",
+   "due_utc": "2026-10-08T13:52:13+00:00",
+   "job_id": 85,
+   "kind": "entry",
+   "ref_id": 27,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-08 22:52:13 JST",
+   "due_utc": "2026-10-08T13:52:13+00:00",
+   "job_id": 86,
+   "kind": "entry",
+   "ref_id": 28,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-08 22:52:13 JST",
+   "due_utc": "2026-10-08T13:52:13+00:00",
+   "job_id": 80,
+   "kind": "entry",
+   "ref_id": 25,
    "status": "running"
   },
   {
@@ -265,6 +289,14 @@
    "kind": "exit",
    "ref_id": 24,
    "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 00:52:13 JST",
+   "due_utc": "2026-10-08T15:52:13+00:00",
+   "job_id": 87,
+   "kind": "side_eval",
+   "ref_id": 7,
+   "status": "pending"
   }
  ],
  "schema": 1,
@@ -272,9 +304,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791467234.372502,
- "updated_jst": "2026-10-08 22:47:14 JST",
- "updated_utc": "2026-10-08T13:47:14+00:00",
+ "updated_epoch": 1791467535.576818,
+ "updated_jst": "2026-10-08 22:52:15 JST",
+ "updated_utc": "2026-10-08T13:52:15+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

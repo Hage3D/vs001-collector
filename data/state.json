@@ -1,5 +1,5 @@
 {
- "code_sha256": "000c40889e33a355",
+ "code_sha256": "98b88c6cdd44479b",
  "config_hash": "736577b44e7c605a",
  "cycles_covered_attempts": 0,
  "cycles_slots_seen": 68,
@@ -17,6 +17,13 @@
  },
  "max_gap_between_covered_scans_s": null,
  "n_pending_jobs": 15,
+ "ops_overrides": {
+  "GT_MIN_INTERVAL_S": {
+   "frozen": 2.2,
+   "reason": "GeckoTerminal 429 at frozen pacing on GitHub-hosted runner IPs",
+   "used": 6.5
+  }
+ },
  "pending_jobs": [
   {
    "due_jst": "2026-10-09 03:57:13 JST",
@@ -144,13 +151,13 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791484444.6228929,
- "updated_jst": "2026-10-09 03:34:04 JST",
- "updated_utc": "2026-10-08T18:34:04+00:00",
+ "updated_epoch": 1791484459.0483081,
+ "updated_jst": "2026-10-09 03:34:19 JST",
+ "updated_utc": "2026-10-08T18:34:19+00:00",
  "writer": {
-  "active": false,
-  "end_reason": "deadline",
-  "gha_run_id": "37780178719",
-  "runner_name": "GitHub Actions 1000000000"
+  "active": true,
+  "end_reason": null,
+  "gha_run_id": "37780683983",
+  "runner_name": "GitHub Actions 1000000001"
  }
 }

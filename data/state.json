@@ -16,7 +16,7 @@
   "raw_bodies": "never exported"
  },
  "max_gap_between_covered_scans_s": null,
- "n_pending_jobs": 49,
+ "n_pending_jobs": 40,
  "ops_overrides": {
   "GT_MIN_INTERVAL_S": {
    "frozen": 2.2,
@@ -26,84 +26,12 @@
  },
  "pending_jobs": [
   {
-   "due_jst": "2026-10-09 08:54:39 JST",
-   "due_utc": "2026-10-08T23:54:39+00:00",
-   "job_id": 396,
-   "kind": "exit",
-   "ref_id": 117,
-   "status": "running"
-  },
-  {
-   "due_jst": "2026-10-09 08:54:45 JST",
-   "due_utc": "2026-10-08T23:54:45+00:00",
-   "job_id": 398,
-   "kind": "exit",
-   "ref_id": 118,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 08:54:51 JST",
-   "due_utc": "2026-10-08T23:54:51+00:00",
-   "job_id": 399,
-   "kind": "exit",
-   "ref_id": 119,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 08:54:57 JST",
-   "due_utc": "2026-10-08T23:54:57+00:00",
-   "job_id": 400,
-   "kind": "exit",
-   "ref_id": 120,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 08:55:03 JST",
-   "due_utc": "2026-10-08T23:55:03+00:00",
-   "job_id": 401,
-   "kind": "exit",
-   "ref_id": 121,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 08:55:09 JST",
-   "due_utc": "2026-10-08T23:55:09+00:00",
-   "job_id": 402,
-   "kind": "exit",
-   "ref_id": 122,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 08:55:15 JST",
-   "due_utc": "2026-10-08T23:55:15+00:00",
-   "job_id": 403,
-   "kind": "exit",
-   "ref_id": 123,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 08:55:21 JST",
-   "due_utc": "2026-10-08T23:55:21+00:00",
-   "job_id": 404,
-   "kind": "exit",
-   "ref_id": 124,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 08:56:45 JST",
-   "due_utc": "2026-10-08T23:56:45+00:00",
-   "job_id": 395,
-   "kind": "side_eval",
-   "ref_id": 31,
-   "status": "pending"
-  },
-  {
    "due_jst": "2026-10-09 08:59:48 JST",
    "due_utc": "2026-10-08T23:59:48+00:00",
    "job_id": 412,
    "kind": "side_eval",
    "ref_id": 32,
-   "status": "pending"
+   "status": "running"
   },
   {
    "due_jst": "2026-10-09 08:59:48 JST",
@@ -423,9 +351,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791503688.283286,
- "updated_jst": "2026-10-09 08:54:48 JST",
- "updated_utc": "2026-10-08T23:54:48+00:00",
+ "updated_epoch": 1791503989.663448,
+ "updated_jst": "2026-10-09 08:59:49 JST",
+ "updated_utc": "2026-10-08T23:59:49+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

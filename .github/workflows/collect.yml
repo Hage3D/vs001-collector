@@ -1,0 +1,94 @@
+# VS-001 read-only paper-study collector. Free GitHub-hosted runner, public repo, no repository secrets.
+# Only the automatic GITHUB_TOKEN is used (contents: write) to commit the data branch.
+name: vs001-collect
+
+on:
+  schedule:
+    # Every 30 min (off the top of the hour). Each run loops for up to ~5h40m; the concurrency group below
+    # keeps ONE pending run queued, which starts as soon as the active run ends -> near-continuous coverage.
+    # Scheduled triggers can be delayed or dropped by GitHub; gaps are recorded as explicit 'missed' cycles.
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+    inputs:
+      max_minutes:
+        description: "Loop length in minutes (<= 340)"
+        required: false
+        default: "340"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vs001
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 355
+    env:
+      TZ: UTC
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      VS001_TRIAL_HOURS: "24"      # trial window counted from the first run; then no new scans
+      VS001_DRAIN_HOURS: "3"       # after the trial window: finish pending entry/exit jobs, then idle
+      DATA_BRANCH: data
+    steps:
+      - name: Checkout code (no third-party actions)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          AUTH=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          echo "::add-mask::$AUTH"
+          git config --global http.https://github.com/.extraheader "AUTHORIZATION: basic $AUTH"
+          git config --global init.defaultBranch main
+          git init -q code
+          git -C code remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git -C code fetch -q --depth 1 origin "$GITHUB_SHA"
+          git -C code checkout -q FETCH_HEAD
+          echo "VS001_WORK_DIR=$RUNNER_TEMP/vs001-work" >> "$GITHUB_ENV"
+          python3 --version
+
+      - name: Checkout data branch (create if missing)
+        run: |
+          set -euo pipefail
+          git init -q datarepo
+          git -C datarepo remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          if git -C datarepo ls-remote --exit-code --heads origin "$DATA_BRANCH" >/dev/null; then
+            git -C datarepo fetch -q origin "$DATA_BRANCH"
+            git -C datarepo checkout -q -B "$DATA_BRANCH" "origin/$DATA_BRANCH"
+          else
+            git -C datarepo checkout -q --orphan "$DATA_BRANCH"
+            mkdir -p datarepo/data
+            cp code/data_branch_README.md datarepo/README.md
+            git -C datarepo add README.md
+            git -C datarepo -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "init data branch"
+            git -C datarepo push -q origin "HEAD:refs/heads/$DATA_BRANCH"
+          fi
+
+      - name: Offline regression tests
+        working-directory: code
+        run: python3 -m tests.regression
+
+      - name: Collect (bounded loop, commits data every cycle)
+        working-directory: code
+        env:
+          MAX_MIN: ${{ github.event.inputs.max_minutes || '340' }}
+        run: python3 -m vs001.runner --data-repo ../datarepo --branch "$DATA_BRANCH" --push --max-minutes "$MAX_MIN"
+
+      - name: Final push of any unpushed local commits
+        if: always()
+        run: |
+          set -uo pipefail
+          cd datarepo
+          for i in 1 2 3 4 5; do
+            git push -q origin "HEAD:refs/heads/$DATA_BRANCH" && exit 0
+            git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              pull -q --rebase origin "$DATA_BRANCH" || git rebase --abort || true
+            sleep $((i * 5))
+          done
+          echo "::warning::final push failed"

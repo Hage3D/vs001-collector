@@ -35,6 +35,7 @@ jobs:
       PYTHONDONTWRITEBYTECODE: "1"
       VS001_TRIAL_HOURS: "24"      # trial window counted from the first run; then no new scans
       VS001_DRAIN_HOURS: "3"       # after the trial window: finish pending entry/exit jobs, then idle
+      VS001_GT_MIN_INTERVAL_S: "6.5"  # ops pacing override: GT returned 429 at 2.2 s on runner IPs (recorded)
       DATA_BRANCH: data
     steps:
       - name: Checkout code (no third-party actions)

@@ -38,6 +38,15 @@ Quotes are estimates from public quote endpoints, never fills. Nothing here is i
   it, no new scans; pending entry/exit jobs are drained for up to `VS001_DRAIN_HOURS=3`, then runs exit
   immediately. Disable the workflow afterwards.
 
+### Pacing override (ops-only, recorded)
+
+On the first GitHub-hosted run GeckoTerminal returned HTTP 429 after ~12 requests at the frozen 2.2 s
+spacing (runner IPs appear to get ~10 calls/min). The workflow therefore sets
+`VS001_GT_MIN_INTERVAL_S=6.5` (≈9 calls/min; a 35-page scan takes ≈4 min instead of ≈80 s). Study rules
+and `config.py` are unchanged (`config_hash` identical); the override is written to `meta.ops_overrides`,
+`gha_runs.note` and `data/state.json`, and per-page fetch times are kept so its effect on data age /
+detection delay is measurable.
+
 ### Timing honesty (Actions does not guarantee 5-min spacing)
 
 Every scan attempt writes a `cycles` row: scheduled slot time, actual fetch start / end (UTC + JST),

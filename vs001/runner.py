@@ -260,7 +260,7 @@ def build_state(conn, prev: dict, active: bool, end_reason: str | None) -> dict:
                    "runner_name": STATE["ident"]["runner_name"]},
         "pending_jobs": [{"job_id": r[0], "kind": r[1], "ref_id": r[2], "due_utc": utc_iso(r[3]),
                           "due_jst": jst(r[3]), "status": r[4]} for r in pend[:50]],
-        "n_pending_jobs": len(pend),
+        "n_pending_jobs": len(pend), "ops_overrides": STATE.get("ops_overrides"),
         "cycles_slots_seen": cov[0], "cycles_covered_attempts": cov[1] or 0,
         "max_gap_between_covered_scans_s": round(max(gaps), 1) if gaps else None,
         "export_policy": {"dropped_columns": {k: sorted(v) for k, v in store.EXPORT_DROP_COLUMNS.items()},
@@ -318,6 +318,18 @@ def main(argv=None):
     STATE["run_start"] = t_start
     STATE["ident"] = ident = gha_identity()
     STATE["code_sha256"] = code_sha256()
+    # Ops-only pacing override (does not change config.py / config_hash; recorded in meta + gha_runs).
+    # First GitHub-hosted run (2026-10-08): GeckoTerminal answered HTTP 429 after ~12 requests at the frozen
+    # 2.2 s spacing (runner IPs appear limited to ~10 calls/min), so the workflow sets 6.5 s (~9.2/min).
+    ops_overrides = {}
+    ov = os.environ.get("VS001_GT_MIN_INTERVAL_S")
+    if ov:
+        GT_LIMITER.min_interval = float(ov)
+        ops_overrides["GT_MIN_INTERVAL_S"] = {"frozen": C.GT_MIN_INTERVAL_S, "used": float(ov),
+                                              "reason": "GeckoTerminal 429 at frozen pacing on GitHub-hosted runner IPs"}
+        log.warning("OPS OVERRIDE GT_MIN_INTERVAL_S %.2f -> %.2f (config_hash unchanged; recorded)",
+                    C.GT_MIN_INTERVAL_S, float(ov))
+    STATE["ops_overrides"] = ops_overrides
     git = store.GitSync(data_dir, args.branch, args.push, log)
     lease_note = lease_wait(data_dir, git, ident["gha_run_id"])
     prev_state = store.read_state(data_dir)
@@ -355,6 +367,7 @@ def main(argv=None):
     conn.execute("INSERT OR REPLACE INTO meta VALUES ('frozen_params',?)", (json.dumps(C.frozen_params(), default=str),))
     if trial_start is not None:
         conn.execute("INSERT OR REPLACE INTO meta VALUES ('trial_started_epoch',?)", (str(trial_start),))
+    conn.execute("INSERT OR REPLACE INTO meta VALUES ('ops_overrides',?)", (json.dumps(ops_overrides),))
     prev_act = conn.execute("SELECT MAX(x) FROM (SELECT MAX(ts_epoch) x FROM heartbeats UNION ALL "
                             "SELECT MAX(scan_finished_epoch) FROM cycles)").fetchone()[0]
     n_abort = conn.execute("UPDATE scans SET status='aborted_by_restart', error='process ended mid-scan' "
@@ -382,7 +395,7 @@ def main(argv=None):
         "pending_jobs_at_start": n_pend0, "overdue_jobs_at_start": len(overdue), "recovered_running_jobs": n_run,
         "aborted_scans_at_start": n_abort, "missed_slots_recorded": n_missed, "prev_activity_epoch": prev_act,
         "gap_since_prev_activity_s": (t_start - prev_act) if prev_act else None,
-        "note": json.dumps({"code_sha256": STATE["code_sha256"], "lease": lease_note,
+        "note": json.dumps({"code_sha256": STATE["code_sha256"], "lease": lease_note, "ops_overrides": ops_overrides,
                             "trial_end_utc": utc_iso(trial_end) if trial_end else None,
                             "api_note": timing.get("note_api")})})
     if lease_note:

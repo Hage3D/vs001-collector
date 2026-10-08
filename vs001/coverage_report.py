@@ -152,6 +152,9 @@ def report(db, since=None, until=None):
         out["failures_by_kind"] = {f"{r[0]}:{r[1]}": r[2] for r in c.execute(
             "SELECT where_, kind, COUNT(*) FROM failures WHERE ts_epoch BETWEEN ? AND ? GROUP BY 1,2 ORDER BY 3 DESC",
             (since, until + SLOT_S))}
+    if has_table(c, "meta"):
+        r = c.execute("SELECT v FROM meta WHERE k='ops_overrides'").fetchone()
+        out["ops_overrides_latest_run"] = json.loads(r[0]) if r and r[0] else {}
     pend = c.execute("SELECT kind, COUNT(*) FROM jobs WHERE status IN ('pending','running') GROUP BY 1").fetchall() \
         if has_table(c, "jobs") else []
     out["pending_jobs"] = {r[0]: r[1] for r in pend}

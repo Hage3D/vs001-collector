@@ -1,0 +1,35 @@
+{
+ "code_sha256": "000c40889e33a355",
+ "config_hash": "736577b44e7c605a",
+ "cycles_covered_attempts": 0,
+ "cycles_slots_seen": 0,
+ "drain_end_utc": "2026-10-09T15:53:58+00:00",
+ "export_policy": {
+  "dropped_columns": {
+   "quotes": [
+    "context_slot",
+    "latency_ms",
+    "raw_json"
+   ]
+  },
+  "pool_snaps": "universe_pre=1",
+  "raw_bodies": "never exported"
+ },
+ "max_gap_between_covered_scans_s": null,
+ "n_pending_jobs": 0,
+ "pending_jobs": [],
+ "schema": 1,
+ "study": "VS-001-v0.1",
+ "trial_end_utc": "2026-10-09T12:53:58+00:00",
+ "trial_started_epoch": 1791464038.072628,
+ "trial_started_utc": "2026-10-08T12:53:58+00:00",
+ "updated_epoch": 1791464038.2691662,
+ "updated_jst": "2026-10-08 21:53:58 JST",
+ "updated_utc": "2026-10-08T12:53:58+00:00",
+ "writer": {
+  "active": true,
+  "end_reason": null,
+  "gha_run_id": "37780178719",
+  "runner_name": "GitHub Actions 1000000000"
+ }
+}

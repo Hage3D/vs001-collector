@@ -2,7 +2,7 @@
  "code_sha256": "98b88c6cdd44479b",
  "config_hash": "736577b44e7c605a",
  "cycles_covered_attempts": 0,
- "cycles_slots_seen": 121,
+ "cycles_slots_seen": 122,
  "drain_end_utc": "2026-10-09T15:53:58+00:00",
  "export_policy": {
   "dropped_columns": {
@@ -28,30 +28,6 @@
   {
    "due_jst": "2026-10-09 07:59:43 JST",
    "due_utc": "2026-10-08T22:59:43+00:00",
-   "job_id": 490,
-   "kind": "entry",
-   "ref_id": 152,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 07:59:43 JST",
-   "due_utc": "2026-10-08T22:59:43+00:00",
-   "job_id": 494,
-   "kind": "entry",
-   "ref_id": 153,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 07:59:43 JST",
-   "due_utc": "2026-10-08T22:59:43+00:00",
-   "job_id": 495,
-   "kind": "entry",
-   "ref_id": 154,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 07:59:43 JST",
-   "due_utc": "2026-10-08T22:59:43+00:00",
    "job_id": 497,
    "kind": "entry",
    "ref_id": 155,
@@ -68,9 +44,9 @@
   {
    "due_jst": "2026-10-09 07:59:43 JST",
    "due_utc": "2026-10-08T22:59:43+00:00",
-   "job_id": 489,
+   "job_id": 495,
    "kind": "entry",
-   "ref_id": 151,
+   "ref_id": 154,
    "status": "running"
   },
   {
@@ -424,6 +400,30 @@
    "kind": "exit",
    "ref_id": 147,
    "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 09:54:57 JST",
+   "due_utc": "2026-10-09T00:54:57+00:00",
+   "job_id": 483,
+   "kind": "exit",
+   "ref_id": 148,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 09:59:43 JST",
+   "due_utc": "2026-10-09T00:59:43+00:00",
+   "job_id": 496,
+   "kind": "side_eval",
+   "ref_id": 38,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 09:59:43 JST",
+   "due_utc": "2026-10-09T00:59:43+00:00",
+   "job_id": 499,
+   "kind": "side_eval",
+   "ref_id": 39,
+   "status": "pending"
   }
  ],
  "schema": 1,
@@ -431,9 +431,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791500399.0748513,
- "updated_jst": "2026-10-09 07:59:59 JST",
- "updated_utc": "2026-10-08T22:59:59+00:00",
+ "updated_epoch": 1791500416.3105721,
+ "updated_jst": "2026-10-09 08:00:16 JST",
+ "updated_utc": "2026-10-08T23:00:16+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

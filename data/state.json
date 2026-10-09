@@ -367,9 +367,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791504959.9322097,
- "updated_jst": "2026-10-09 09:15:59 JST",
- "updated_utc": "2026-10-09T00:15:59+00:00",
+ "updated_epoch": 1791504961.451043,
+ "updated_jst": "2026-10-09 09:16:01 JST",
+ "updated_utc": "2026-10-09T00:16:01+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

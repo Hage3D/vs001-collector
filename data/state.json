@@ -16,7 +16,7 @@
   "raw_bodies": "never exported"
  },
  "max_gap_between_covered_scans_s": null,
- "n_pending_jobs": 50,
+ "n_pending_jobs": 40,
  "ops_overrides": {
   "GT_MIN_INTERVAL_S": {
    "frozen": 2.2,
@@ -25,86 +25,6 @@
   }
  },
  "pending_jobs": [
-  {
-   "due_jst": "2026-10-09 11:20:44 JST",
-   "due_utc": "2026-10-09T02:20:44+00:00",
-   "job_id": 561,
-   "kind": "side_eval",
-   "ref_id": 43,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 11:20:44 JST",
-   "due_utc": "2026-10-09T02:20:44+00:00",
-   "job_id": 564,
-   "kind": "side_eval",
-   "ref_id": 44,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 11:20:45 JST",
-   "due_utc": "2026-10-09T02:20:45+00:00",
-   "job_id": 565,
-   "kind": "exit",
-   "ref_id": 169,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 11:20:51 JST",
-   "due_utc": "2026-10-09T02:20:51+00:00",
-   "job_id": 566,
-   "kind": "exit",
-   "ref_id": 170,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 11:20:57 JST",
-   "due_utc": "2026-10-09T02:20:57+00:00",
-   "job_id": 567,
-   "kind": "exit",
-   "ref_id": 171,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 11:21:03 JST",
-   "due_utc": "2026-10-09T02:21:03+00:00",
-   "job_id": 568,
-   "kind": "exit",
-   "ref_id": 172,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 11:21:09 JST",
-   "due_utc": "2026-10-09T02:21:09+00:00",
-   "job_id": 569,
-   "kind": "exit",
-   "ref_id": 173,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 11:21:15 JST",
-   "due_utc": "2026-10-09T02:21:15+00:00",
-   "job_id": 570,
-   "kind": "exit",
-   "ref_id": 174,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 11:21:21 JST",
-   "due_utc": "2026-10-09T02:21:21+00:00",
-   "job_id": 571,
-   "kind": "exit",
-   "ref_id": 175,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 11:21:27 JST",
-   "due_utc": "2026-10-09T02:21:27+00:00",
-   "job_id": 572,
-   "kind": "exit",
-   "ref_id": 176,
-   "status": "pending"
-  },
   {
    "due_jst": "2026-10-09 12:04:44 JST",
    "due_utc": "2026-10-09T03:04:44+00:00",
@@ -431,9 +351,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791512441.4977307,
- "updated_jst": "2026-10-09 11:20:41 JST",
- "updated_utc": "2026-10-09T02:20:41+00:00",
+ "updated_epoch": 1791512742.8488693,
+ "updated_jst": "2026-10-09 11:25:42 JST",
+ "updated_utc": "2026-10-09T02:25:42+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

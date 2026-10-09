@@ -2,7 +2,7 @@
  "code_sha256": "98b88c6cdd44479b",
  "config_hash": "736577b44e7c605a",
  "cycles_covered_attempts": 0,
- "cycles_slots_seen": 156,
+ "cycles_slots_seen": 157,
  "drain_end_utc": "2026-10-09T15:53:58+00:00",
  "export_policy": {
   "dropped_columns": {
@@ -16,7 +16,7 @@
   "raw_bodies": "never exported"
  },
  "max_gap_between_covered_scans_s": null,
- "n_pending_jobs": 40,
+ "n_pending_jobs": 41,
  "ops_overrides": {
   "GT_MIN_INTERVAL_S": {
    "frozen": 2.2,
@@ -25,6 +25,14 @@
   }
  },
  "pending_jobs": [
+  {
+   "due_jst": "2026-10-09 10:54:38 JST",
+   "due_utc": "2026-10-09T01:54:38+00:00",
+   "job_id": 612,
+   "kind": "gate",
+   "ref_id": 48,
+   "status": "running"
+  },
   {
    "due_jst": "2026-10-09 11:09:56 JST",
    "due_utc": "2026-10-09T02:09:56+00:00",
@@ -351,9 +359,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791510585.0813951,
- "updated_jst": "2026-10-09 10:49:45 JST",
- "updated_utc": "2026-10-09T01:49:45+00:00",
+ "updated_epoch": 1791510886.5123684,
+ "updated_jst": "2026-10-09 10:54:46 JST",
+ "updated_utc": "2026-10-09T01:54:46+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

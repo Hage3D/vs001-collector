@@ -2,7 +2,7 @@
  "code_sha256": "98b88c6cdd44479b",
  "config_hash": "736577b44e7c605a",
  "cycles_covered_attempts": 0,
- "cycles_slots_seen": 146,
+ "cycles_slots_seen": 147,
  "drain_end_utc": "2026-10-09T15:53:58+00:00",
  "export_policy": {
   "dropped_columns": {
@@ -25,38 +25,6 @@
   }
  },
  "pending_jobs": [
-  {
-   "due_jst": "2026-10-09 10:04:44 JST",
-   "due_utc": "2026-10-09T01:04:44+00:00",
-   "job_id": 575,
-   "kind": "entry",
-   "ref_id": 178,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 10:04:44 JST",
-   "due_utc": "2026-10-09T01:04:44+00:00",
-   "job_id": 579,
-   "kind": "entry",
-   "ref_id": 179,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 10:04:44 JST",
-   "due_utc": "2026-10-09T01:04:44+00:00",
-   "job_id": 580,
-   "kind": "entry",
-   "ref_id": 180,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 10:04:44 JST",
-   "due_utc": "2026-10-09T01:04:44+00:00",
-   "job_id": 574,
-   "kind": "entry",
-   "ref_id": 177,
-   "status": "running"
-  },
   {
    "due_jst": "2026-10-09 11:09:56 JST",
    "due_utc": "2026-10-09T02:09:56+00:00",
@@ -264,6 +232,38 @@
    "kind": "side_eval",
    "ref_id": 45,
    "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 12:04:44 JST",
+   "due_utc": "2026-10-09T03:04:44+00:00",
+   "job_id": 582,
+   "kind": "exit",
+   "ref_id": 177,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 12:04:50 JST",
+   "due_utc": "2026-10-09T03:04:50+00:00",
+   "job_id": 583,
+   "kind": "exit",
+   "ref_id": 178,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 12:04:56 JST",
+   "due_utc": "2026-10-09T03:04:56+00:00",
+   "job_id": 584,
+   "kind": "exit",
+   "ref_id": 179,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 12:05:02 JST",
+   "due_utc": "2026-10-09T03:05:02+00:00",
+   "job_id": 585,
+   "kind": "exit",
+   "ref_id": 180,
+   "status": "pending"
   }
  ],
  "schema": 1,
@@ -271,9 +271,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791507885.8436952,
- "updated_jst": "2026-10-09 10:04:45 JST",
- "updated_utc": "2026-10-09T01:04:45+00:00",
+ "updated_epoch": 1791507932.2507858,
+ "updated_jst": "2026-10-09 10:05:32 JST",
+ "updated_utc": "2026-10-09T01:05:32+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

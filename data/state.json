@@ -2,7 +2,7 @@
  "code_sha256": "98b88c6cdd44479b",
  "config_hash": "736577b44e7c605a",
  "cycles_covered_attempts": 0,
- "cycles_slots_seen": 145,
+ "cycles_slots_seen": 146,
  "drain_end_utc": "2026-10-09T15:53:58+00:00",
  "export_policy": {
   "dropped_columns": {
@@ -16,7 +16,7 @@
   "raw_bodies": "never exported"
  },
  "max_gap_between_covered_scans_s": null,
- "n_pending_jobs": 40,
+ "n_pending_jobs": 36,
  "ops_overrides": {
   "GT_MIN_INTERVAL_S": {
    "frozen": 2.2,
@@ -25,46 +25,6 @@
   }
  },
  "pending_jobs": [
-  {
-   "due_jst": "2026-10-09 09:54:39 JST",
-   "due_utc": "2026-10-09T00:54:39+00:00",
-   "job_id": 477,
-   "kind": "side_eval",
-   "ref_id": 37,
-   "status": "running"
-  },
-  {
-   "due_jst": "2026-10-09 09:54:39 JST",
-   "due_utc": "2026-10-09T00:54:39+00:00",
-   "job_id": 478,
-   "kind": "exit",
-   "ref_id": 145,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 09:54:45 JST",
-   "due_utc": "2026-10-09T00:54:45+00:00",
-   "job_id": 481,
-   "kind": "exit",
-   "ref_id": 146,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 09:54:51 JST",
-   "due_utc": "2026-10-09T00:54:51+00:00",
-   "job_id": 482,
-   "kind": "exit",
-   "ref_id": 147,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 09:54:57 JST",
-   "due_utc": "2026-10-09T00:54:57+00:00",
-   "job_id": 483,
-   "kind": "exit",
-   "ref_id": 148,
-   "status": "pending"
-  },
   {
    "due_jst": "2026-10-09 09:59:43 JST",
    "due_utc": "2026-10-09T00:59:43+00:00",
@@ -79,6 +39,14 @@
    "job_id": 499,
    "kind": "side_eval",
    "ref_id": 39,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 09:59:44 JST",
+   "due_utc": "2026-10-09T00:59:44+00:00",
+   "job_id": 573,
+   "kind": "gate",
+   "ref_id": 45,
    "status": "pending"
   },
   {
@@ -351,9 +319,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791507282.9355948,
- "updated_jst": "2026-10-09 09:54:42 JST",
- "updated_utc": "2026-10-09T00:54:42+00:00",
+ "updated_epoch": 1791507584.3565786,
+ "updated_jst": "2026-10-09 09:59:44 JST",
+ "updated_utc": "2026-10-09T00:59:44+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

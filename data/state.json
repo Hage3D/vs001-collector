@@ -2,7 +2,7 @@
  "code_sha256": "98b88c6cdd44479b",
  "config_hash": "736577b44e7c605a",
  "cycles_covered_attempts": 0,
- "cycles_slots_seen": 181,
+ "cycles_slots_seen": 182,
  "drain_end_utc": "2026-10-09T15:53:58+00:00",
  "export_policy": {
   "dropped_columns": {
@@ -31,7 +31,7 @@
    "job_id": 620,
    "kind": "side_eval",
    "ref_id": 48,
-   "status": "pending"
+   "status": "running"
   },
   {
    "due_jst": "2026-10-09 12:59:39 JST",
@@ -431,9 +431,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791518098.4697726,
- "updated_jst": "2026-10-09 12:54:58 JST",
- "updated_utc": "2026-10-09T03:54:58+00:00",
+ "updated_epoch": 1791518384.85857,
+ "updated_jst": "2026-10-09 12:59:44 JST",
+ "updated_utc": "2026-10-09T03:59:44+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

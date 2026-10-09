@@ -16,7 +16,7 @@
   "raw_bodies": "never exported"
  },
  "max_gap_between_covered_scans_s": null,
- "n_pending_jobs": 44,
+ "n_pending_jobs": 30,
  "ops_overrides": {
   "GT_MIN_INTERVAL_S": {
    "frozen": 2.2,
@@ -26,156 +26,20 @@
  },
  "pending_jobs": [
   {
-   "due_jst": "2026-10-09 13:09:38 JST",
-   "due_utc": "2026-10-09T04:09:38+00:00",
-   "job_id": 660,
-   "kind": "side_eval",
-   "ref_id": 52,
+   "due_jst": "2026-10-09 13:14:39 JST",
+   "due_utc": "2026-10-09T04:14:39+00:00",
+   "job_id": 749,
+   "kind": "entry",
+   "ref_id": 232,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 13:14:39 JST",
+   "due_utc": "2026-10-09T04:14:39+00:00",
+   "job_id": 748,
+   "kind": "entry",
+   "ref_id": 231,
    "status": "running"
-  },
-  {
-   "due_jst": "2026-10-09 13:09:39 JST",
-   "due_utc": "2026-10-09T04:09:39+00:00",
-   "job_id": 661,
-   "kind": "exit",
-   "ref_id": 193,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:09:39 JST",
-   "due_utc": "2026-10-09T04:09:39+00:00",
-   "job_id": 742,
-   "kind": "gate",
-   "ref_id": 58,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:09:45 JST",
-   "due_utc": "2026-10-09T04:09:45+00:00",
-   "job_id": 662,
-   "kind": "exit",
-   "ref_id": 194,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:09:51 JST",
-   "due_utc": "2026-10-09T04:09:51+00:00",
-   "job_id": 663,
-   "kind": "exit",
-   "ref_id": 195,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:09:57 JST",
-   "due_utc": "2026-10-09T04:09:57+00:00",
-   "job_id": 664,
-   "kind": "exit",
-   "ref_id": 196,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:03 JST",
-   "due_utc": "2026-10-09T04:10:03+00:00",
-   "job_id": 665,
-   "kind": "exit",
-   "ref_id": 197,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:09 JST",
-   "due_utc": "2026-10-09T04:10:09+00:00",
-   "job_id": 666,
-   "kind": "exit",
-   "ref_id": 198,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:15 JST",
-   "due_utc": "2026-10-09T04:10:15+00:00",
-   "job_id": 667,
-   "kind": "exit",
-   "ref_id": 199,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:21 JST",
-   "due_utc": "2026-10-09T04:10:21+00:00",
-   "job_id": 668,
-   "kind": "exit",
-   "ref_id": 200,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:27 JST",
-   "due_utc": "2026-10-09T04:10:27+00:00",
-   "job_id": 669,
-   "kind": "exit",
-   "ref_id": 201,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:33 JST",
-   "due_utc": "2026-10-09T04:10:33+00:00",
-   "job_id": 670,
-   "kind": "exit",
-   "ref_id": 202,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:39 JST",
-   "due_utc": "2026-10-09T04:10:39+00:00",
-   "job_id": 671,
-   "kind": "exit",
-   "ref_id": 203,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:45 JST",
-   "due_utc": "2026-10-09T04:10:45+00:00",
-   "job_id": 672,
-   "kind": "exit",
-   "ref_id": 204,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:51 JST",
-   "due_utc": "2026-10-09T04:10:51+00:00",
-   "job_id": 673,
-   "kind": "exit",
-   "ref_id": 205,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:10:57 JST",
-   "due_utc": "2026-10-09T04:10:57+00:00",
-   "job_id": 674,
-   "kind": "exit",
-   "ref_id": 206,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:11:03 JST",
-   "due_utc": "2026-10-09T04:11:03+00:00",
-   "job_id": 675,
-   "kind": "exit",
-   "ref_id": 207,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:11:09 JST",
-   "due_utc": "2026-10-09T04:11:09+00:00",
-   "job_id": 676,
-   "kind": "exit",
-   "ref_id": 208,
-   "status": "pending"
-  },
-  {
-   "due_jst": "2026-10-09 13:11:45 JST",
-   "due_utc": "2026-10-09T04:11:45+00:00",
-   "job_id": 654,
-   "kind": "side_eval",
-   "ref_id": 50,
-   "status": "pending"
   },
   {
    "due_jst": "2026-10-09 13:54:38 JST",
@@ -376,6 +240,30 @@
    "kind": "exit",
    "ref_id": 228,
    "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 15:14:39 JST",
+   "due_utc": "2026-10-09T06:14:39+00:00",
+   "job_id": 750,
+   "kind": "side_eval",
+   "ref_id": 58,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 15:14:39 JST",
+   "due_utc": "2026-10-09T06:14:39+00:00",
+   "job_id": 751,
+   "kind": "exit",
+   "ref_id": 229,
+   "status": "pending"
+  },
+  {
+   "due_jst": "2026-10-09 15:14:45 JST",
+   "due_utc": "2026-10-09T06:14:45+00:00",
+   "job_id": 752,
+   "kind": "exit",
+   "ref_id": 230,
+   "status": "pending"
   }
  ],
  "schema": 1,
@@ -383,9 +271,9 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791518987.5641131,
- "updated_jst": "2026-10-09 13:09:47 JST",
- "updated_utc": "2026-10-09T04:09:47+00:00",
+ "updated_epoch": 1791519288.9560509,
+ "updated_jst": "2026-10-09 13:14:48 JST",
+ "updated_utc": "2026-10-09T04:14:48+00:00",
  "writer": {
   "active": true,
   "end_reason": null,

@@ -1,16 +1,11 @@
+# VS-001 read-only paper-study collector. PAUSED: workflow_dispatch only (no schedule/push).
 # VS-001 read-only paper-study collector. Free GitHub-hosted runner, public repo, no repository secrets.
 # Only the automatic GITHUB_TOKEN is used (contents: write) to commit the data branch.
 name: vs001-collect
 
 on:
-  schedule:
-    # Every 30 min (off the top of the hour). Each run loops for up to ~5h40m; the concurrency group below
-    # keeps ONE pending run queued, which starts as soon as the active run ends -> near-continuous coverage.
-    # Scheduled triggers can be delayed or dropped by GitHub; gaps are recorded as explicit 'missed' cycles.
-    - cron: "7,37 * * * *"
-  push:
-    # A code update on main starts (or queues) a run; data-branch commits never trigger workflows.
-    branches: [main]
+  # 2026-10-09: `schedule` and `push` triggers REMOVED (paused pending billing/private-repo checks).
+  # Manual start only. This commit itself does not trigger a run (push trigger absent at this SHA).
   workflow_dispatch:
     inputs:
       max_minutes:

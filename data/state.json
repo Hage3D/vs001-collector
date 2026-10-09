@@ -431,12 +431,12 @@
  "trial_end_utc": "2026-10-09T12:53:58+00:00",
  "trial_started_epoch": 1791464038.072628,
  "trial_started_utc": "2026-10-08T12:53:58+00:00",
- "updated_epoch": 1791525309.1302583,
- "updated_jst": "2026-10-09 14:55:09 JST",
- "updated_utc": "2026-10-09T05:55:09+00:00",
+ "updated_epoch": 1791525370.4697726,
+ "updated_jst": "2026-10-09 14:56:10 JST",
+ "updated_utc": "2026-10-09T05:56:10+00:00",
  "writer": {
-  "active": true,
-  "end_reason": null,
+  "active": false,
+  "end_reason": "deadline",
   "gha_run_id": "37861830773",
   "runner_name": "GitHub Actions 1000000002"
  }
